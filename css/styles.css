@@ -91,11 +91,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.page-nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
-.page-logo {
+.logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -109,15 +109,15 @@ body {
   flex-direction: row;
   gap: 0px;
 }
-.logo-header {
+.header-logo {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-right: 76px;
 }
-.span-logo-header {
+.header-span-logo {
   color: #2e2f42;
 }
-.page-menu {
+.header-menu-list {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -125,43 +125,56 @@ body {
   gap: 40px;
   background-color: #ffffff;
 }
-.menu-link {
+.header-menu-link {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.page-menu .menu-link {
+.header-menu-list .header-menu-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.page-menu .menu-link:hover,
-.page-menu .menu-link:focus {
+.header-menu-list .header-menu-link:hover,
+.header-menu-list .header-menu-link:focus {
   color: #404bbf;
 }
-.page-menu .menu-link:active {
+.header-menu-list .header-menu-link:active {
   color: #404bbf;
+}
+.header-studio-link {
+  position: relative;
+}
+.header-studio-link:active::after {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 
 .page-contacts {
   font-style: normal;
 }
-.list-contacts {
+.contacts-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: row;
   gap: 40px;
 }
-.list-contacts .link {
+.contacts-list .contacts-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
-.list-contacts .link:hover,
-.list-contacts .link:focus {
+.contacts-list .contacts-link:hover,
+.contacts-list .contacts-link:focus {
   color: #404bbf;
 }
 /* =========== /HEADER STYLES ===========*/
@@ -176,8 +189,12 @@ body {
   padding: 188px 0;
   color: #ffffff;
   text-align: center;
+  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/background-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.page-title {
+.hero-title {
   max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
