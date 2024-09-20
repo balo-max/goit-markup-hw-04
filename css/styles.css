@@ -238,6 +238,7 @@ body {
 .solutions-icon-conteiner {
   max-width: 100%;
   padding: 24px 100px;
+  margin-bottom: 8px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background-color: #f4f4fd;
@@ -245,7 +246,7 @@ body {
 .solutions-item {
   width: calc((100% - 72px) / 4);
 }
-.title-solutions {
+.solutions-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -253,7 +254,7 @@ body {
   color: #2e2f42;
   margin-bottom: 8px;
 }
-.text-solutions {
+.solutions-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -276,7 +277,7 @@ body {
 }
 .fullname-profession {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 8px;
 }
 .name-title {
   font-weight: 500;
@@ -295,7 +296,7 @@ body {
   text-align: center;
   color: #434455;
 }
-.page-team {
+.team-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -306,8 +307,27 @@ body {
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   width: calc((100% - 72px) / 4);
 }
-.page-team .team-item {
+.team-list .team-item {
   background-color: #ffffff;
+}
+.team-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: #31d0aa;
+}
+.team-list-icon {
+  display: flex;
+  gap: 24px;
+  margin: 0 16px 32px 16px;
 }
 /* =========== /SECTION OUR TEAM STYLES ===========*/
 
